@@ -79,7 +79,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'Corona_Spread_Data',
         'USER':'root',
-        'PASSWORD':'$aksirA3',
+        'PASSWORD':'',
         'HOST':'localhost',
         'PORT':'3306'
     }
