@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>hosp_results_page</title>
+</head>
+
+<style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      height: 100%;
+    }
+
+    .form-style-9{
+        max-width: 450px;
+        background: #FAFAFA;
+        padding: 30px;
+        margin: 50px auto;
+        box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+        border-radius: 10px;
+        border: 6px solid #305A72;
+    }
+    </style>
+
+<style>
+    .red-btn {
+        background-color: #305A72;
+        color: #305A72;
+        padding: 10px;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        margin:10px;
+        /* height: 25px; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .button {
+        font: bold 11px Arial;
+        text-decoration: none;
+        background-color: #EEEEEE;
+        color: #333333;
+        padding: 2px 6px 2px 6px;
+        border-top: 1px solid #CCCCCC;
+        border-right: 1px solid #333333;
+        border-bottom: 1px solid #333333;
+        border-left: 1px solid #CCCCCC;
+        }
+</style>
+
+<body>
+
+    <form class="form-style-9">
+      <h2>State: {{ state.state }}</h2>
+      <h2>Number of Hospitals: {{ state.hosp_num }}</h2>
+
+    </form>
+<form class="red-btn" action="/corona_spread">
+    <input type="submit" value="Back to the Main Page!" />
+</form>
+
+</body>
+</html>
